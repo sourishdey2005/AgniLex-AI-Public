@@ -1,0 +1,9 @@
+- [ ] Update `frontend_app.py`:
+  - [ ] Rename site (ancient Indian unique name) in `st.set_page_config` and visible UI header(s).
+  - [ ] Add end-to-end “Delete Chat” section (with confirmation) shown only when a conversation is selected.
+  - [ ] Wire delete action to existing `DELETE /api/conversations/{conversation_id}` via `make_request`.
+  - [ ] On success, clear `st.session_state.current_conversation_id` and `st.rerun()`.
+- [ ] Quick manual verification steps:
+  - [ ] Run frontend, ensure name/title updated.
+  - [ ] Start/select a conversation, verify delete UI appears.
+  - [ ] Confirm delete works and chat clears without breaking other pages.
